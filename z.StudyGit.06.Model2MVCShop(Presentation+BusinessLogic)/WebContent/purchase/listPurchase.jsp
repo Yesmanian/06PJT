@@ -102,7 +102,7 @@ function fncGetUserList(currentPage) {
 	</tr>
 		
 	<c:set var="i" value="0"/>
-		<c:forEach var="vo" items="${list }">
+		<c:forEach var="vo" items="${list}">
 		<c:set var="i" value="${i+1}"/>
 		
 		<tr class="ct_list_pop">
@@ -114,7 +114,7 @@ function fncGetUserList(currentPage) {
 			<td align="left">
 				<a href="/getUser.do?userId=${vo.buyer.userId }">${vo.buyer.userId }</a>
 			<td></td>
-			<td align="left">${vo.buyer.userName }</td>
+			<td align="left">${user.userName }</td>
 			<td></td>
 			<td align="left">${vo.receiverPhone }</td>
 			<td></td>
